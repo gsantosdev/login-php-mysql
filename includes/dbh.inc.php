@@ -3,10 +3,10 @@
 $servername = "localhost";
 $dBusername = "root";
 $dBPassword = "";
-$dbName = "sistemalogin";
+$dBname = "sistemalogin";
 
 
-$conn = mysqli_connect($servername, $dbUsername, $dBname);
+$conn = mysqli_connect($servername, $dBusername, $dBPassword,$dBname);
 
 if(!$conn)
 {

@@ -5,6 +5,11 @@
 
     <main>
         <h1>Signup</h1>
+        <?php
+            if (isset($_GET['error'])) {
+                echo '<script> alert("'.$_GET['error'].'");</script>';
+            }
+        ?>
         <form action="includes/signup.inc.php" method="post">
         <input type="text" name="uid" placeholder="Username">
         <input type="text" name="mail" placeholder="E-mail">
